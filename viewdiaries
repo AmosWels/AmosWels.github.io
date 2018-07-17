@@ -20,7 +20,8 @@
             <h2>Welcome John, view All Diary entries </h2>
             <a href="#default" class="logo">My Diaries</a>
             <div class="header-right">
-                <a class="active" href="userprofile.html">View My Profile</a>
+                <a class="" href="userprofile.html">View My Profile</a> &nbsp;&nbsp;&sol;&nbsp;&nbsp;&nbsp;
+                <a class="" href="creatediary.html">Create Diary</a>
                 <!--                <a href="#contact">Contact</a>
                                 <a href="#about">About</a>-->
             </div>
