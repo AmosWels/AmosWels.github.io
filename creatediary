@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta charset="UTF-8">
-        <meta name="description" content="Responsive Admin Dashboard Template" />
+        <meta name="description" content="My Diary" />
         <meta name="keywords" content="admin,dashboard" />
-        <meta name="author" content="Steelcoders" />
-    <title>my diary</title>
-    <link rel="stylesheet" href="./css/style.css"
-  </head>
-  <body>
-    <header>
-      <h2>Create New Diary Entry</h2>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="tablecontainer">
-  <form action="action_page.php">
+        <meta name="author" content="amoswels" />
+        <title>My Diary</title>
+        <link rel="stylesheet" href="./css/style3.css">
+    </head>
+    <body>
+        <ul class="breadcrumb">
+            <!--<li><a href="index.html">Home</a></li>-->
+            <li><a href="viewdiaries.html">View Diaries</a></li>
+            <li>Create New Diary</li>
+        </ul>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Diary Entry Name..">
 
-    <label for="fname">Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Entry Name..">
+                <label for="lname">Due Date</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter Date.." ><br><br>
 
-    <label for="type">Type</label>
-    <select id="type" name="type">
-      <option value="#">choose . . . </option>
-      <option value="australia">Home</option>
-      <option value="canada">Office</option>
-      <option value="usa">Sports</option>
-    </select>
+                <label for="country">Type</label>
+                <select id="country" name="country">
+                    <option value="#">Choose . . .</option>
+                    <option value="australia">Office</option>
+                    <option value="canada">Home</option>
+                    <option value="usa">Sports</option>
+                </select>
 
-    <label for="purpose">Purpose</label>
-    <textarea id="purpose" name="subject" placeholder="Provide Purpose.." style="height:200px"></textarea>
-
-    <label for="lname">Date Due</label>
-    <input type="date" id="lname" name="lastname" placeholder="Enter Date Due.."><br><br>
-
-    <input type="submit" value="Save">
-  </form>
-
-</div>
-      </div>
-    </div>
-    <div class="footer">
-      <ul>
-        <li>Copyrights resevered to my Diary</li>
-        <li><a>www.mydiary.com</a></li>
-      </ul>
-    </div>
-  </body>
+                <label for="subject">Purpose</label>
+                <textarea id="subject" name="subject" placeholder="Provide Purpose.." style="height:200px"></textarea><br>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>Copyrights resevered to my Diary</li>
+                <li><a>www.mydiary.com</a></li>
+            </ul>
+        </div>
+    </body>
 </html>
